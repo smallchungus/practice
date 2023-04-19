@@ -1,16 +1,19 @@
-# This is a sample Python script.
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+class Solution:
+    def productExceptSelf(self, nums: list[int]) -> list[int]:
+        res = [1] * len(nums)
+        left = 1
+        right = 1
 
+        for i in range(1, len(nums)):
+            left *= nums[i-1]
+            res[i] *= left
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+        for i in range(len(nums)-2, -1, -1):
+            right *= nums[i+1]
+            res[i] *= right
+        return res
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+s = Solution()
+print(s.productExceptSelf([1, 2, 3, 4]))
+# output: [24, 12, 8, 6]
