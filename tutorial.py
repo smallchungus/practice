@@ -37,12 +37,18 @@
 # print(x)
 
 
-is_hot = False
+# is_hot = False
+#
+# if is_hot:
+#     print("It's a hot day")
+#     print("Drink plenty of water")
+# else:
+#     print("It's a cold day")
+#     print("Wear warm clothes")
+# print("Enjoy your day")
 
-if is_hot:
-    print("It's a hot day")
-    print("Drink plenty of water")
-else:
-    print("It's a cold day")
-    print("Wear warm clothes")
-print("Enjoy your day")
+has_high_income = True
+has_good_credit = True
+
+if has_high_income or has_good_credit:
+    print("Eligible for loan")
