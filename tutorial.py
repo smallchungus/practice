@@ -19,12 +19,30 @@
 # msg = f'{first} [{last}] is a coder'
 # print(msg)
 
-course = 'Python for Beginners'
-print(course.replace('Beginners', 'Absolute Beginners'))
-print(course.upper())
-print(course.lower())
-print(course)
+# course = 'Python for Beginners'
+# print(course.replace('Beginners', 'Absolute Beginners'))
+# print(course.upper())
+# print(course.lower())
+# print(course)
+#
+# print(course.find('O'))
+#
+# print( 10 ** 3 )
 
-print(course.find('O'))
+# x = 10
+# x -= 3
+# print(x)
+#
+# x = 10 + 3 * 2 ** 2
+# print(x)
 
-print( 10 ** 3 )
+
+is_hot = False
+
+if is_hot:
+    print("It's a hot day")
+    print("Drink plenty of water")
+else:
+    print("It's a cold day")
+    print("Wear warm clothes")
+print("Enjoy your day")
